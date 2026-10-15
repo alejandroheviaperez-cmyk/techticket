@@ -1,12 +1,10 @@
 import { Component } from '@angular/core';
-import { IonHeader, IonToolbar, IonTitle, IonContent } from '@ionic/angular';
+import { TicketDashboardComponent } from '../features/ticket-dashboard/ticket-dashboard.component';
 
 @Component({
   selector: 'app-home',
-  templateUrl: 'home.page.html',
-  styleUrls: ['home.page.scss'],
-  imports: [IonHeader, IonToolbar, IonTitle, IonContent],
+  standalone: true,
+  imports: [TicketDashboardComponent],
+  template: `<app-ticket-dashboard class="ion-page"></app-ticket-dashboard>`
 })
-export class HomePage {
-  constructor() {}
-}
+export class HomePage {}
